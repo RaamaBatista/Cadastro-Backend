@@ -7,7 +7,7 @@ router.post("/users", async (req, res) => {
     await db.Users.create(dados).then((dadosUser)=>{
 
         return res.json({
-            mensagem: 'cada',
+            mensagem: 'Cadastro com sucesso!!!',
             dadosUser
         })
     }).catch((error)=>{
